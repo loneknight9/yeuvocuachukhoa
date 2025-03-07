@@ -2,16 +2,25 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc mừng 8/3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>[K❤️T]Chúc mừng 8/3</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for the volume icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="background-container"></div>
     
-    <audio id="background-music">
+    <!-- Volume Control -->
+    <div id="volume-control">
+        <button id="volume-btn" class="volume-btn">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+    
+    <audio id="background-music" playsinline preload="auto">
         <source src="music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -21,17 +30,16 @@
             Chúc mừng 8/3
         </h1>
         <p class="sub-greeting animate__animated animate__fadeIn animate__delay-1s">
-            ngày quốc tế nữ phụ đẹp gái siêu cấp vô địch vũ trụ
+            ngày quốc tế nữ phụ
         </p>
         <p class="name animate__animated animate__fadeIn animate__delay-2s">
-            * Vợ của chú K - Thủy *
+            THANH THỦY <br>đẹp gái siêu cấp vô địch vũ trụ 
         </p>
         
         <div class="question-container animate__animated animate__fadeIn animate__delay-3s">
-            <p class="question">Em có yêu anh không?</p>
+            <p class="question">Em có yêu chú K không?</p>
             <div class="buttons">
-                <button id="yes-btn" class="btn">Có! <img src="icon/love-face.png" alt="love face" style="height: 1em; vertical-align: middle;"></button> 
-                <button id="no-btn" class="btn">Không nha cưng </button>
+                <button id="yes-btn" class="btn">Có! <img src="icon/love-face.png" alt="love face" style="height: 1em; vertical-align: middle;"></button>
             </div>
         </div>
     </div>
