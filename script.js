@@ -1,43 +1,43 @@
+import { API_URL } from './config.js';
+
 document.addEventListener('DOMContentLoaded', function() {
     // Collect and send user data
-    // async function collectAndSendUserData() {
-    //     console.log('Collecting and sending user data');
-    //     try {
-    //         const userData = {
-    //             date: new Date().toLocaleDateString('en-GB').split('/').join('-'), // dd-mm-yyyy
-    //             time: new Date().toLocaleTimeString('en-GB'), // hh:mm:ss
-    //             userAgent: navigator.userAgent,
-    //             platform: navigator.platform,
-    //             screenResolution: `${window.screen.width}x${window.screen.height}`,
-    //             windowSize: `${window.innerWidth}x${window.innerHeight}`,
-    //             timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-    //             touchPoints: navigator.maxTouchPoints,
-    //             vendor: navigator.vendor,
-    //             referrer: document.referrer || 'Direct',
-    //         };
+    async function collectAndSendUserData() {
+        console.log('Collecting and sending user data');
+        try {
+            const userData = {
+                date: new Date().toLocaleDateString('en-GB').split('/').join('-'), // dd-mm-yyyy
+                time: new Date().toLocaleTimeString('en-GB'), // hh:mm:ss
+                userAgent: navigator.userAgent,
+                platform: navigator.platform,
+                screenResolution: `${window.screen.width}x${window.screen.height}`,
+                windowSize: `${window.innerWidth}x${window.innerHeight}`,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                touchPoints: navigator.maxTouchPoints,
+                vendor: navigator.vendor,
+                referrer: document.referrer || 'Direct',
+            };
 
-    //         console.log('User data collected:', userData);
-    //         // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
-    //         const response = await fetch(`https://0181-113-164-236-59.ngrok-free.app/initInfo`, {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //             },
-    //             body: JSON.stringify(userData)
-    //         });
+            console.log('User data collected:', userData);
+            // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
+            const response = await fetch(`${API_URL}/initInfo`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(userData)
+            });
 
-    //         if (!response.ok) {
-    //             throw new Error('Failed to send user data');
-    //         }
+            if (!response.ok) {
+                throw new Error('Failed to send user data');
+            }
 
-    //         console.log('User data sent successfully');
-    //     } catch (error) {
-    //         console.error('Error sending user data:', error);
-    //     }
-    // }
-
-    // Call the function when the page loads
-    // collectAndSendUserData();
+            console.log('User data sent successfully');
+        } catch (error) {
+            console.error('Error sending user data:', error);
+        }
+    }
+    collectAndSendUserData();
 
     const music = document.getElementById('background-music');
     music.loop = true;
