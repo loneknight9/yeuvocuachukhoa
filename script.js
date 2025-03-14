@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function collectAndSendUserData() {
         console.log('Collecting and sending user data');
         try {
+            console.log ("API_URL", API_URL);
             const userData = {
                 date: new Date().toLocaleDateString('en-GB').split('/').join('-'), // dd-mm-yyyy
                 time: new Date().toLocaleTimeString('en-GB'), // hh:mm:ss
