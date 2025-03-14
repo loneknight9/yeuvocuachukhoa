@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>[K❤️T]Chúc mừng 8/3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for the volume icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CM7T5ZRPBF"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CM7T5ZRPBF', {
+        debug
+    });
+</script>
+<body>
+    <div class="background-container"></div>
+    
+    <!-- Volume Control -->
+    <div id="volume-control">
+        <button id="volume-btn" class="volume-btn">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+    
+    <audio id="background-music" playsinline preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="content">
+        <h1 class="greeting animate__animated animate__fadeIn">
+            Chúc mừng 8/3
+        </h1>
+        <p class="sub-greeting animate__animated animate__fadeIn animate__delay-1s">
+            ngày quốc tế nữ phụ
+        </p>
+        <p class="name animate__animated animate__fadeIn animate__delay-2s">
+            THANH THỦY <br>đẹp gái siêu cấp vô địch vũ trụ 
+        </p>
+        
+        <div class="question-container animate__animated animate__fadeIn animate__delay-3s">
+            <p class="question">Em có yêu chú K không?</p>
+            <div class="buttons">
+                <button id="yes-btn" class="btn">Có! <img src="icon/love-face.png" alt="love face" style="height: 1em; vertical-align: middle;"></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
