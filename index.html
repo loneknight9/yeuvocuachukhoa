@@ -10,10 +10,10 @@
     <!-- Add Font Awesome for the volume icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Vercel Analytics -->
-    <script>
+    <!-- <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script> -->
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM7T5ZRPBF"></script>
@@ -23,9 +23,11 @@
     gtag('js', new Date());
 
     gtag('config', 'G-CM7T5ZRPBF', {
-        debug
+        debug: true
     });
 </script>
+<script type="module" src="script.js"></script>
+
 <body>
     <div class="background-container"></div>
     
@@ -58,8 +60,6 @@
                 <button id="yes-btn" class="btn">Có! <img src="icon/love-face.png" alt="love face" style="height: 1em; vertical-align: middle;"></button>
             </div>
         </div>
-    </div>
-    
-    <script src="script.js"></script>
+    </div>    
 </body>
 </html> 

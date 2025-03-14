@@ -138,12 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!lastClick || today.toDateString() !== new Date(lastClick).toDateString()) {
             heartCount++;
             
-            // Track heart count update in Vercel Analytics
-            window.va('event', {
-                name: 'heart_count_update',
-                data: { count: heartCount }
-            });
-            
             localStorage.setItem('heartCount', heartCount.toString());
             localStorage.setItem('lastClickDate', today.toDateString());
             
@@ -493,10 +487,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const yesBtn = document.getElementById('yes-btn');
     yesBtn.addEventListener('click', function() {
         // Track button click
-        window.va('event', {
-            name: 'yes_button_click'
-        });
-
         // Try to play music if it's paused
         if (music.paused) {
             attemptPlay();
