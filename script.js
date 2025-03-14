@@ -5,7 +5,7 @@ let koClickCount = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     // Check if current date is after the activation date (March 15, 2025, 11:00 AM)
-    const activationDate = new Date('2025-03-14T13:00:00');
+    const activationDate = new Date('2025-03-14T12:30:00');
     const currentDate = new Date();
     
     if (currentDate < activationDate) {
@@ -1093,7 +1093,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span>💓</span>
             </div>
             <div class="pandora-message">
-                <h2>Nãy chồng nhầm bar Pandora =)))). Này mới đúng nà!</h2>
+                <h2>Nãy chồng thúi nhầm bar Pandora =)))). Này mới đúng nà!</h2>
                 <button class="final-continue-btn">Đóng</button>
             </div>
         </div>
