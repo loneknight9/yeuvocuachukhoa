@@ -5,7 +5,7 @@ let koClickCount = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     // Check if current date is after the activation date (March 15, 2025, 11:00 AM)
-    const activationDate = new Date('2025-03-14T12:30:00');
+    const activationDate = new Date('2025-03-15T12:30:00');
     const currentDate = new Date();
     
     if (currentDate < activationDate) {
